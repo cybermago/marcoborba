@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+*,*::before,*::after{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Montserrat','Lora','Roboto' sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    line-height: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    --primary-text-color: #FFFFFF;
+  }
+  
+  body {
+      background: var(--surface-ground);
+      color: var(--text-color);
+      padding: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      padding: 0;
+      background-color:#1E1E1E;
+      color: #FFFFFF;
+      
+  }
+
+ :root {
+  --surface: #121212;
+  --primary-color: #FCD34D; /* Amarelo */
+  --primary-text-color: #FFFFFF; /* Branco */
+  --secondary-color: #38BDF8; /* Azul Neon */
+  --p-card-background: #FFFFFF;
+}
+
+
+.card {
+  background: var(--p-card-background); /* Utiliza o token para definir o fundo */
+  border-radius: var(--p-card-border-radius, 8px); /* Valor padrão caso o token não esteja definido */
+}
+
+  // Estilos para Bootstrap
+.bootstrap-styles {
+  @import "../node_modules/bootstrap/scss/bootstrap";
+}
+
+  /* PrimeNG */
+@import "../node_modules/primeng/resources/themes/saga-blue/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeflex/primeflex.css";

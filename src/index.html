@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Marcoborba</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/primeicons/primeicons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/quill@1.3.7/dist/quill.snow.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+
+    <!-- Script para o efeito ao rolar o scroll -->
+    <script>
+      $(document).ready(function() {
+        // Ao rolar a página
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 50) {
+            $('#navbar').addClass('shrink');
+          } else {
+            $('#navbar').removeClass('shrink');
+          }
+        });
+      });
+    </script>
+  
+      <!-- Script para mostrar/esconder e controlar o botão -->
+      <script>
+          const backToTopBtn = document.getElementById("backToTopBtn");
+  
+          window.onscroll = function() {
+              if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                  backToTopBtn.style.display = "block";
+              } else {
+                  backToTopBtn.style.display = "none";
+              }
+          };
+  
+          backToTopBtn.onclick = function() {
+              window.scrollTo({top: 0, behavior: 'smooth'});
+          };
+      </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<div class="my-16 px-4 w-auto" id="contact">
+    <p-card class="w-full">
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3 sm:col-6 xl:col-4 p-4 mx-auto justify-center items-center">
+            
+                <h3 class="text-xl font-semibold text-center mb-4">Envie uma Mensagem</h3>
+                <form method="POST" action="/enviar-mensagem">
+
+                    <div class="card p-fluid">
+                        <div class="p-formgrid grid">
+                            <div class="field col">
+                                <label htmlFor="name2">Name</label>
+                                <input pInputText id="name2" type="text" />
+
+                                <label htmlFor="phone">Telefone</label>
+                                <p-inputmask mask="99-999999" id="phone" placeholder="99-999999" />
+
+                            </div>
+                           
+                            <div class="field col">
+                                <label htmlFor="email2">Email</label>
+                                <input pInputText id="email2" type="text" />
+
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" rows="5" cols="30" pInputTextarea placeholder="Escreva sua mensagem..."></textarea>
+                            </div>
+                            
+                        </div>
+                        <p-button label="Enviar" icon="pi pi-send" class="p-button-success" />
+                    </div>
+                </form>
+        </div>
+        <p-divider layout="vertical"></p-divider>
+
+        <div class="col-12 md:col-6 lg:col-3 sm:col-6 xl:col-4 p-4 mx-auto justify-center items-center">
+            <h3 class="text-xl font-semibold text-center mb-4">Informações de Contato</h3>
+                <div class="p-4">
+                    <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+                    <p><strong>Telefone:</strong> (00) 12345-6789</p>
+                    <p><strong>Email:</strong> contato</p>
+                    <p><strong>Redes Sociais:</strong></p>
+                    <div class="flex gap-4 justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="text-blue-600">
+                            <i class="pi pi-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-pink-600">
+                            <i class="pi pi-instagram text-2xl"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="text-blue-400">
+                            <i class="pi pi-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </p-card>
+    </div>

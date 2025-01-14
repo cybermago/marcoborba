@@ -1,0 +1,79 @@
+/*
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331 !important;
+  }
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s;
+    height: 10vh;
+    margin-bottom: 5rem;
+}
+
+.navbar.scrolled {
+    background-color: rgba( 100, 100, 200);
+    height: 8vh;
+    transform: all 0.9s ease;
+    opacity: 0.9;
+}
+*/
+
+
+.nav-container {
+    display: flex; /* Define o contêiner como flexível */
+    gap: 15px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte, se necessário */
+  }
+  
+  a{
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-container .nav-item{
+      justify-content: center; /* Centraliza os itens */
+      display: none;
+    }
+  }
+  
+  
+  .sidebar-toggle {
+    display: none; /* Esconder por padrão */
+  }
+  
+  /* Exibir apenas em telas menores que 768px */
+  @media (max-width: 768px) {
+    .sidebar-toggle {
+        display: inline; /* Exibir botão em mobile */
+    }
+    .logo{
+      justify-content: center;
+      align-items: center;
+      margin-left: 10rem;
+      transition: all 0.3s ease;
+    }
+  
+  }
+  
+  .dropdown-menu {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+    width: calc(100% - 100px); /* Largura total da lista */
+  }
+  
+  .dropdown-item {
+    display: flex; /* Permite que o ícone e o texto fiquem lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    padding: 0.5rem 1rem; /* Adiciona preenchimento ao item */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0; /* Altera o fundo ao passar o mouse */
+  }

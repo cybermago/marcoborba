@@ -1,0 +1,44 @@
+.cta-section {
+    background-color: #E0F7FA; /* Fundo verde intenso */
+    color: #002245;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+  }
+  .cta-image {
+    max-width: 50%;
+    border-radius: 10px;
+  }
+
+  .rotating-shape {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(223, 219, 18, 0.2);
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+  }
+  .rotating-shape:nth-child(1) {
+    top: 10%;
+    left: 15%;
+  }
+  .rotating-shape:nth-child(2) {
+    top: 50%;
+    left: 70%;
+    width: 150px;
+    height: 150px;
+  }
+  .rotating-shape:nth-child(3) {
+    top: 70%;
+    left: 30%;
+    width: 90px;
+    height: 90px;
+  }
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }

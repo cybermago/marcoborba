@@ -1,0 +1,112 @@
+.carousel-item {
+    height: 100vh; /* Altura total da tela */
+}
+.carousel-item video {
+    object-fit: cover; /* Para cobrir todo o espaço */
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+
+html,
+body,
+header,
+.carousel {
+  height: 100%;
+}
+
+   /* Foto de Perfil */
+   .profile-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .profile-img {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #fff; /* Borda branca para destacar a imagem */
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .carousel-caption{
+      background-color: rgba(0, 0, 0, 0.5);
+      align-items: center !important;
+      text-align: center !important;
+      justify-content: center !important;
+      justify-items: center !important;
+      width: 100% !important;
+      height: 35% !important;
+      top: 70% !important;
+      display: block;
+      left: 0 !important;
+      margin: 0 !important;
+      transform: none !important;
+    }
+    .caption{
+      text-align: center;
+      position: relative;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      top: 5% !important;
+      transform: none !important;
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0;
+      left: 0;
+    }
+  }
+
+  .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    width: 30rem;
+    height: 65rem;
+    display: block;
+    margin: 0;
+    left: 60%;
+    top: -5rem;
+    bottom: 0;
+    transform: skewY(-20deg) rotate(20deg) scale(0.8);
+  }
+
+  .caption{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    margin: 0 20rem 0 0rem;
+    top: 35%;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    transform: skewY(0deg) rotate(0deg) scale(1);
+  }
