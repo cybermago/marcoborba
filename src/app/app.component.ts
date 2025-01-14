@@ -20,7 +20,7 @@ import { MenuComponent } from "./shared/layout/header/menu/menu.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, AboutComponent, ContactComponent, ServicesComponent, PricesComponent, CallActionComponent, TestimonialsComponent, GalleryComponent, CarrouselComponent, MenuComponent],
+  imports: [RouterOutlet, CommonModule, FooterComponent, AboutComponent, ContactComponent, ServicesComponent, PricesComponent, CallActionComponent, TestimonialsComponent, GalleryComponent, CarrouselComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   standalone: true,
